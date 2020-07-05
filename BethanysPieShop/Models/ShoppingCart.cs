@@ -21,6 +21,7 @@ namespace BethanysPieShop.Models
             _appDbContext = appDbContext;
         }
 
+        //Shopping cart get cart method
         public static ShoppingCart GetCart(IServiceProvider services)
         {
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?
